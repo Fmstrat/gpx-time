@@ -93,7 +93,7 @@ async function main() {
 
     var builder = new xml2js.Builder();
     var xml = builder.buildObject(gpxxml);
-    await fs.writeFileSync(`${process.argv[2]}2.gpx`, xml);
+    await fs.writeFileSync(process.argv[2], xml);
 }
 
 main()
